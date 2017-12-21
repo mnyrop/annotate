@@ -273,7 +273,7 @@ layout: null
 					},
 					"@type": "sc:Canvas",
 					"otherContent": [{
-							"@id": "{{ site.url }}{{ site.baseurl }}/annotation-lists/f7.json",
+							"@id": "{{ site.baseurl }}/annotation-lists/f7.json",
 							"@type":"sc:AnnotationList"
 					}]
 				},
@@ -393,7 +393,7 @@ layout: null
 					},
 					"@type": "sc:Canvas",
 					"otherContent": [{
-							"@id": "{{ site.url }}{{ site.baseurl }}/annotation-lists/f11.json",
+							"@id": "{{ site.baseurl }}/annotation-lists/f11.json",
 							"@type":"sc:AnnotationList"
 					}]
 				},
@@ -426,7 +426,7 @@ layout: null
 					},
 					"@type": "sc:Canvas",
 					"otherContent": [{
-							"@id": "{{ site.url }}{{ site.baseurl }}/annotation-lists/f12.json",
+							"@id": "{{ site.baseurl }}/annotation-lists/f12.json",
 							"@type":"sc:AnnotationList"
 					}]
 				},

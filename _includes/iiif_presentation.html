@@ -1,0 +1,27 @@
+<iframe title='Mirador' class="iiif_presentation" allowtransparency="true" src='iiif_mirador.html' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true' style='width: 100%; height: 600px;' srcdoc="<link rel='stylesheet' type='text/css' href='{{ site.baseurl }}/build/mirador/css/mirador-combined.css'>
+<style>
+#viewer {
+	width: 100%;
+	height: 500px
+}
+</style>
+<div id='viewer'></div>
+
+<script src='{{ site.baseurl }}/build/mirador/mirador.js'></script>
+<script type='text/javascript'>
+   $(function() {
+     myMiradorInstance = Mirador({
+       id: 'viewer',
+       data: [
+         { manifestUri: '{{ site.baseurl }}/manifest.json', 'location': 'Gallica'}
+       ],
+       windowObjects: [{
+           loadedManifest: '{{ site.baseurl }}/manifest.json',
+           canvasID: 'http://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/canvas/f7',
+           bottomPanelVisible: true
+       }],
+       annotationEndpoint: { 'name':'Local Storage', 'module': 'LocalStorageEndpoint' }
+     });
+   });
+</script>">
+</iframe>
