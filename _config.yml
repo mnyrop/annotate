@@ -1,7 +1,7 @@
 title: BnF640
 description: ""
 baseurl: "/bnf640" # the subpath of your site, e.g. /blog
-url: "http://marii.info" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
