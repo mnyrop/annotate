@@ -3,7 +3,7 @@ layout: null
 ---
 {
   "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "{{ site.baseurl }}/annotation-lists/f12.json",
+  "@id": "{{ site.url }}{{ site.baseurl }}/annotation-lists/f12.json",
   "@type": "sc:AnnotationList",
 
   "resources": [{

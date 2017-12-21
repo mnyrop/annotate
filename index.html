@@ -6,22 +6,22 @@ layout: null
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/build/mirador/css/mirador-combined.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/build/mirador/css/mirador-combined.css">
     <title>Mirador Viewer</title>
     <style type="text/css">#viewer {left: 10%;top:10%;width: 80%;height: 80%;position: fixed;}</style>
   </head>
   <body>
     <center><div id="viewer"></div></center>
-    <script src="{{ site.baseurl }}/build/mirador/mirador.js"></script>
+    <script src="{{ site.url }}{{ site.baseurl }}/build/mirador/mirador.js"></script>
     <script type="text/javascript">
        $(function() {
          myMiradorInstance = Mirador({
            id: "viewer",
            data: [
-             { manifestUri: "{{ site.baseurl }}/manifest.json", "location": "Gallica"}
+             { manifestUri: "{{ site.url }}{{ site.baseurl }}/manifest.json", "location": "Gallica"}
            ],
            windowObjects: [{
-               loadedManifest: "{{ site.baseurl }}/manifest.json",
+               loadedManifest: "{{ site.url }}{{ site.baseurl }}/manifest.json",
                canvasID: "http://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/canvas/f7",
                bottomPanelVisible: true
            }],
