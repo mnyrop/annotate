@@ -1,0 +1,28 @@
+<style>
+  .anno{max-width:800;overflow:scroll;padding:10px;background-color:grey;}
+  .file{color:white;}
+</style>
+<button type="button" id="anno_button">View cached annotation JSON</button>
+<div id="anno_results"></div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/jscript">
+  var gallicaUrlRegex = /.+gallica\.bnf\.fr.+canvas\/(.+)/g;
+
+  $( "#anno_button" ).click(function() {
+    $( "#anno_results" ).empty()
+    for(var i =0; i < localStorage.length; i++){
+      var key = localStorage.key(i);
+      console.log('key: ' + key);
+      var matches = gallicaUrlRegex.exec(key);
+      console.log('matches: ' + matches);
+      if(matches != null) {
+        var fileName = matches[1] + '.json';
+        var fileContent = localStorage.getItem(key);
+        $( "#anno_results" ).append( "<div class='anno'><h1 class='file'>"+fileName+"</h1><code>"+ fileContent.replace(/</g,'&lt;').replace(/>/g,'&gt;').trim() + "</code></div>" );
+      }
+    }
+  });
+</script>
