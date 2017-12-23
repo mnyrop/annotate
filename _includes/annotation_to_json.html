@@ -1,6 +1,5 @@
 <style>
-  .anno{max-width:800;overflow:scroll;padding:10px;background-color:grey;margin-top:10px;}
-  .file{color:white;}
+  .anno{max-width:800;overflow:scroll;padding:10px;margin-top:10px;}
 </style>
 <button type="button" id="anno_button">View cached annotation JSON</button>
 <div id="anno_results"></div>
@@ -11,18 +10,37 @@
 <script type="text/jscript">
   var gallicaUrlRegex = /.+gallica\.bnf\.fr.+canvas\/(.+)/;
 
-  $( "#anno_button" ).click(function() {
-    $( "#anno_results" ).empty()
-    for(var i =0; i < localStorage.length; i++){
-      var key = localStorage.key(i);
-      console.log('key: ' + key);
-      var matches = gallicaUrlRegex.exec(key);
-      console.log('matches: ' + matches);
-      if(matches != null) {
-        var fileName = matches[1] + '.json';
-        var fileContent = localStorage.getItem(key);
-        $( "#anno_results" ).append( "<div class='anno'><h1 class='file'>"+fileName+"</h1><code>"+ fileContent.replace(/</g,'&lt;').replace(/>/g,'&gt;').trim() + "</code></div>" );
+  function download(filename, text) {
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', filename);
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+  }
+  $(document).ready(function(){
+    $( "#anno_button" ).click(function() {
+      $( "#anno_results" ).empty()
+      for(var i =0; i < localStorage.length; i++){
+        var key = localStorage.key(i);
+        var matches = gallicaUrlRegex.exec(key);
+        if(matches != null) {
+          var canvas = matches[1]
+          var fileName = canvas + '.json';
+          var fileContent = localStorage.getItem(key);
+          $( "#anno_results" ).append("<div class='anno'></div>" )
+                              .append("<h1 class='file'>" + canvas + "</h1>")
+                              .append("<textarea rows='30' cols='100' id='" + canvas + "-content'>"+ fileContent.replace(/</g,'&lt;').replace(/>/g,'&gt;').trim() + "</textarea>")
+                              .append("<button type='button' id='" + canvas +"' class='download-button'>Download " + fileName + "</button>");
+
+        }
       }
-    }
+      $(".download-button").click(function(){
+        var content_id = this.id + "-content"
+        var text = document.getElementById(content_id).value;
+        download(fileName, text);
+      });
+    });
   });
 </script>

@@ -10,4 +10,10 @@ layout: default
 {% include iiif_presentation.html %}
 <br><br>
 
+## To use the demo:
+
+### Add one or more annotations to one or more pages. Click the 'view cached annotation JSON' button below. Click the download button for each canvas when you're ready.
+
+### **Note:** This will only include *new* annotations added in the browser and saved in localStorage.
+
 {% include annotation_to_json.html %}
