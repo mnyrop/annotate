@@ -32,7 +32,7 @@
           $( "#anno_results" ).append("<div class='anno'></div>" )
                               .append("<h1 class='file'>" + canvas + "</h1>")
                               .append("<textarea rows='30' cols='100' id='" + canvas + "-content'>"+ fileContent.replace(/</g,'&lt;').replace(/>/g,'&gt;').trim() + "</textarea>")
-                              .append("<button type='button' id='" + canvas +"' class='download-button'>Download " + fileName + "</button>");
+                              .append("<br><button type='button' id='" + canvas +"' class='download-button'>Download " + fileName + "</button>");
 
         }
       }
