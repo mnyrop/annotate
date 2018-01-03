@@ -1,0 +1,101 @@
+---
+layout: null
+title: f11-resources
+---
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@type": "oa:Annotation",
+  "motivation": ["oa:tagging", "oa:commenting"],
+  "resource": [{
+    "@type": "oa:Tag",
+    "chars": "title"
+  }, {
+    "@type": "dctypes:Text",
+    "format": "text/html",
+    "chars": "<p>title 1</p>"
+  }],
+  "on": [{
+    "@type": "oa:SpecificResource",
+    "full": "http://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/canvas/f11",
+    "selector": {
+      "@type": "oa:Choice",
+      "default": {
+        "@type": "oa:FragmentSelector",
+        "value": "xywh=1298,373,1094,336"
+      },
+      "item": {
+        "@type": "oa:SvgSelector",
+        "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1297.71602,372.89047l547.21168,0l0,0l547.21168,0l0,167.92739l0,167.92739l-547.21168,0l-547.21168,0l0,-167.92739z\" data-paper-data=\"{&quot;defaultStrokeValue&quot;:1,&quot;editStrokeValue&quot;:5,&quot;currentStrokeValue&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_5a6fb439-bbf7-44cf-85a7-d4e5135bca1a\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"5.7906\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+      }
+    },
+    "within": {
+      "@id": "http://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/manifest.json",
+      "@type": "sc:Manifest"
+    }
+  }],
+  "@id": "26980591-8dc9-4554-8b28-1735df18bfc4"
+}, {
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@type": "oa:Annotation",
+  "motivation": ["oa:tagging", "oa:commenting"],
+  "resource": [{
+    "@type": "oa:Tag",
+    "chars": "title"
+  }, {
+    "@type": "dctypes:Text",
+    "format": "text/html",
+    "chars": "<p>title 2</p>"
+  }],
+  "on": [{
+    "@type": "oa:SpecificResource",
+    "full": "http://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/canvas/f11",
+    "selector": {
+      "@type": "oa:Choice",
+      "default": {
+        "@type": "oa:FragmentSelector",
+        "value": "xywh=1402,1774,1442,336"
+      },
+      "item": {
+        "@type": "oa:SvgSelector",
+        "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1401.94681,1774.21561l720.92967,0l0,0l720.92967,0l0,167.92739l0,167.92739l-720.92967,0l-720.92967,0l0,-167.92739z\" data-paper-data=\"{&quot;defaultStrokeValue&quot;:1,&quot;editStrokeValue&quot;:5,&quot;currentStrokeValue&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_e68ee121-6a88-4d6e-aa6a-893bd8d62134\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"5.7906\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+      }
+    },
+    "within": {
+      "@id": "http://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/manifest.json",
+      "@type": "sc:Manifest"
+    }
+  }],
+  "@id": "d23b938c-94b6-48e1-aa5f-cba81aacf286"
+}, {
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@type": "oa:Annotation",
+  "motivation": ["oa:tagging", "oa:commenting"],
+  "resource": [{
+    "@type": "oa:Tag",
+    "chars": "title"
+  }, {
+    "@type": "dctypes:Text",
+    "format": "text/html",
+    "chars": "<p>title 3</p>"
+  }],
+  "on": [{
+    "@type": "oa:SpecificResource",
+    "full": "http://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/canvas/f11",
+    "selector": {
+      "@type": "oa:Choice",
+      "default": {
+        "@type": "oa:FragmentSelector",
+        "value": "xywh=1448,3425,1604,313"
+      },
+      "item": {
+        "@type": "oa:SvgSelector",
+        "value": "<svg xmlns='http://www.w3.org/2000/svg'><path xmlns=\"http://www.w3.org/2000/svg\" d=\"M1448.27161,3424.53654l801.99807,0l0,0l801.99807,0l0,156.34619l0,156.34619l-801.99807,0l-801.99807,0l0,-156.34619z\" data-paper-data=\"{&quot;defaultStrokeValue&quot;:1,&quot;editStrokeValue&quot;:5,&quot;currentStrokeValue&quot;:1,&quot;rotation&quot;:0,&quot;deleteIcon&quot;:null,&quot;rotationIcon&quot;:null,&quot;group&quot;:null,&quot;editable&quot;:true,&quot;annotation&quot;:null}\" id=\"rectangle_a64624c9-edd0-4db8-adda-b4ef9a924062\" fill-opacity=\"0\" fill=\"#00bfff\" fill-rule=\"nonzero\" stroke=\"#00bfff\" stroke-width=\"5.7906\" stroke-linecap=\"butt\" stroke-linejoin=\"miter\" stroke-miterlimit=\"10\" stroke-dasharray=\"\" stroke-dashoffset=\"0\" font-family=\"none\" font-weight=\"none\" font-size=\"none\" text-anchor=\"none\" style=\"mix-blend-mode: normal\"/></svg>"
+      }
+    },
+    "within": {
+      "@id": "http://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/manifest.json",
+      "@type": "sc:Manifest"
+    }
+  }],
+  "@id": "0e221db6-1e68-4347-b428-3bc6450ae6f2"
+}
