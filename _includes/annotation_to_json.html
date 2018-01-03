@@ -19,6 +19,22 @@
     element.click();
     document.body.removeChild(element);
   }
+  var safetext = function(text){
+  	var table = {
+  		'<': 'lt',
+  		'>': 'gt',
+  		'"': 'quot',
+  		'\'': 'apos',
+  		'&': 'amp',
+  		'\r': '#10',
+  		'\n': '#13'
+  	};
+
+  	return text.toString().replace(/[<>"'\r\n&]/g, function(chr){
+  		return '&' + table[chr] + ';';
+  	});
+  };
+
   $(document).ready(function(){
     $( "#anno_button" ).click(function() {
       $( "#anno_results" ).empty()
@@ -26,20 +42,22 @@
         var key = localStorage.key(i);
         var matches = gallicaUrlRegex.exec(key);
         if(matches != null) {
-          var canvas = matches[1]
+          var canvas = matches[1];
           var fileName = canvas + '.json';
           var fileContent = localStorage.getItem(key);
-          $( "#anno_results" ).append("<div class='anno'></div>" )
+          if (fileContent.length > 2) {
+            $("#anno_results").append("<div class='anno'></div>" )
                               .append("<h1 class='file'>" + canvas + "</h1>")
-                              .append("<textarea rows='30' cols='100' id='" + canvas + "-content'>"+ fileContent.replace(/</g,'&lt;').replace(/>/g,'&gt;').trim() + "</textarea>")
+                              .append("<textarea rows='30' cols='100' id='" + canvas + "-content'>"+ safetext(fileContent))
                               .append("<br><button type='button' id='" + canvas +"' class='download-button'>Download " + fileName + "</button>");
-
+          }
         }
       }
       $(".download-button").click(function(){
-        var content_id = this.id + "-content"
+        var content_id = this.id + "-content";
         var text = document.getElementById(content_id).value;
-        download(fileName, text);
+        var file = this.id + ".json"
+        download(file, text);
       });
     });
   });

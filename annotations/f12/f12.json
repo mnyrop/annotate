@@ -1,9 +1,8 @@
 ---
 layout: null
-title: f12-resources
+label: f12-resources
 ---
-
-{
+[{
     "@context": "http://iiif.io/api/presentation/2/context.json",
     "@type": "oa:Annotation",
     "motivation": ["oa:tagging", "oa:commenting"],
@@ -33,4 +32,4 @@ title: f12-resources
     }
   ],
   "@id": "7f617063-53bc-4e9f-8137-adc12c17e82f"
-}
+}]

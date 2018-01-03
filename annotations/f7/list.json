@@ -2,13 +2,4 @@
 layout: null
 canvas: f7
 ---
-{% assign anno_name = page.canvas | append: '-resources' %}
-{% assign annotations = site.pages | where: 'title', anno_name | first %}
-{
-  "@context": "http://iiif.io/api/presentation/2/context.json",
-  "@id": "{{ site.url }}{{ site.baseurl }}/annotations/f7/list.json",
-  "@type": "sc:AnnotationList",
-  "resources": [
-    {{ annotations.content }}
-  ]
-}
+{% assign anno_name = page.canvas | append: "-resources" %}{% assign annotations = site.pages | where: "label", anno_name | first %}{"@context": "http://iiif.io/api/presentation/2/context.json","@id": "{{ site.url }}{{ site.baseurl }}/annotations/f7/list.json","@type": "sc:AnnotationList","resources": {{ annotations.content }} }
