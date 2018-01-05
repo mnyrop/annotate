@@ -43,13 +43,13 @@ task :write_manifest do
   Dir['annotations/*/'].each { | c_dir | canvas_ids << File.basename(c_dir, ".*") }
   puts "adding annotation references for canvases " + canvas_ids.to_s + " to manifest copy."
 
-  m = File.read('clean-manifest.json').gsub(/\A---(.|\n)*?---/, "").to_s
+  m = File.read('build/clean-manifest.json').gsub(/\A---(.|\n)*?---/, "").to_s
   manifest = JSON.parse(m)
 
   manifest["sequences"][0]["canvases"].select {|c| canvas_ids.include? c["@id"].split('/')[-1] }.each do | canvas |
     this_id = canvas["@id"].split('/')[-1]
     anno_hash = Hash.new { |hash, key| hash[key] = {} }
-    anno_hash["@id"] = "{{ site.baseurl }}/annotations/" + this_id + "/list.json"
+    anno_hash["@id"] = "{{ site.url }}{{ site.baseurl }}/annotations/" + this_id + "/list.json"
     anno_hash["@type"] = "sc:AnnotationList"
     canvas["otherContent"] = anno_hash
   end
@@ -59,4 +59,8 @@ task :write_manifest do
 
 end
 
-task :default => [:store_annotations]
+task :store_and_reference => :store_annotations do
+  Rake::Task["write_manifest"].invoke
+end
+
+task :default => [:store_and_reference]

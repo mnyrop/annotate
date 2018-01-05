@@ -1,6 +1,8 @@
 ---
 layout: default
+title: Adding Annotations
 ---
+<script src="https://use.fontawesome.com/884e80fbb8.js"></script>
 
 # Bibliothèque nationale de France Français 640
 
@@ -10,10 +12,12 @@ layout: default
 {% include iiif_presentation.html %}
 <br><br>
 
-## To use the demo:
+# Adding annotations:
 
-### Add one or more annotations to one or more pages. Click the 'view cached annotation JSON' button below. Click the download button for each canvas when you're ready.
+### Make sure you are on Image View <i class="fa fa-photo"></i> then toggle the Annotation <i class="fa fa-comments"></i> panel.
 
-### **Note:** This will only include *new* annotations added in the browser and saved in localStorage.
+### Add one or more annotations to one or more pages. Then click the 'view cached annotation JSON' button below. 
+
+### **Note:** This will only include *new* annotations added in the browser.
 
 {% include annotation_to_json.html %}

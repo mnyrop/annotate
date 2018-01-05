@@ -9,6 +9,8 @@ permalink: pretty
 
 theme: minima
 
+exclude: [Rakefile, Gemfile*]
+
 webrick:
   headers:
     "Access-Control-Allow-Origin": "*"
