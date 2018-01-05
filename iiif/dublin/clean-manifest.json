@@ -1,0 +1,121 @@
+{
+   "@context": "http://iiif.io/api/presentation/2/context.json",
+   "@id": "https://data.ucd.ie/api/img/manifests/ucdlib:40851",
+   "seeAlso": [
+      {
+         "@id": "https://digital.ucd.ie/view/ucdlib:40851.xml",
+         "format": "text/xml",
+         "profile": "http://www.loc.gov/mods/v3",
+         "label": "MODS metadata describing this object"
+      },
+      {
+         "@id": "https://digital.ucd.ie/view/ucdlib:40851.n3",
+         "format": "text/rdf+n3",
+         "label": "RDF n3 serialisation of metadata describing this object"
+      },
+      {
+         "@id": "https://data.ucd.ie/api/edm/v1/ucdlib:40851",
+         "format": "application/x.europeana-edm+xml",
+         "label": "EDM (Europeana Data Model) RDF metadata",
+         "profile": "http://www.europeana.eu/schemas/edm/"
+      },
+      {
+         "@id": "https://digital.ucd.ie/view/ucdlib:40851.rdf",
+         "format": "application/rdf+xml",
+         "label": "RDF-XML metadata describing this object"
+      }   ],
+   "within": {
+      "@id": "https://data.ucd.ie/api/img/collection/ucdlib:40377",
+
+      "@type": "sc:Collection",
+
+      "label": "Ordnance Survey Ireland (OSi) 19th Century Historical Maps"
+   },
+   "attribution": "Ordnance Survey Ireland",
+   "logo": "https://digital.ucd.ie/images/logos/ucd_logo_sm.png",
+   "description": "City of Dublin : sheet 21",
+   "label": "City of Dublin : sheet 21",
+   "@type": "sc:Manifest",
+   "thumbnail": "https://digital.ucd.ie/get/ucdlib:40851/thumbnail",
+   "metadata": [
+      { "label": "title","value": "City of Dublin : sheet 21" },
+      {
+         "label": "Type of resource", "value": [
+            { "@value": "dctypes:Image" }
+         ]
+      },
+      {
+         "label": "published", "value": [
+            {"@value": "Dublin, Ireland"}
+         ]
+      },
+      {
+         "label": "created", "value": "1838"
+      },
+      {
+         "label": "Date details",
+         "value": "The principal details have been corrected to 1847."
+      },
+      {
+         "label": "Scope and content",
+         "value": "Containing parts of St. Andrew&apos;s, St. Anne&apos;s, St. Bridget&apos;s, St. Mark&apos;s, St. Peter&apos;s, St. Werburgh&apos;s, St. John&apos;s, St. Michan&apos;s and St. Mary&apos;s Parishes and parts of South City, Royal Exchange, Trinity, Mansion House, Wood Quay, North City and Inns&apos; Quay Wards."
+      },
+      { "label" : "permalink", "value" : "doi:10.7925/drs1.ucdlib_40851" },
+      {
+         "label": "genre", "value": "map"
+      }
+   ],
+   "sequences": [{
+      "@context":"http://iiif.io/api/presentation/2/context.json",
+      "@id": "https://data.ucd.ie/api/img/manifests/ucdlib:40851/sequence/normal",
+      "@type": "sc:Sequence",
+
+      "label": "Current Page Order",
+      "viewingHint": "individuals",
+      "canvases": [
+         {
+           "@id": "https://data.ucd.ie/api/img/ucdlib:40851/canvas/ucdlib:42220",
+           "@type": "sc:Canvas",
+           "label": "recto",
+           "width": 13401,
+           "height": 9092,
+ "service": { "@context": "http://iiif.io/api/annex/services/physdim/1/context.json", "profile": "http://iiif.io/api/annex/services/physdim",
+            "physicalScale": 0.00285714285714286, "physicalUnits": "in" },
+            "images": [{
+                "resource": {
+                    "service": {
+                       "@id": "https://iiif.ucd.ie/loris/ucdlib:42220",
+                       "@context": "http://iiif.io/api/image/2/context.json",
+                       "profile": "http://iiif.io/api/image/2/level2.json"
+                  },
+                 "format": "image/jpeg",
+                 "height": 9092,
+                 "width": 13401,
+                 "@id": "https://iiif.ucd.ie/loris/ucdlib:42220/full/full/0/default.jpg",
+                 "@type": "dcTypes:Image"
+               },
+              "on": "https://data.ucd.ie/api/img/ucdlib:40851/canvas/ucdlib:42220",
+              "motivation": "sc:painting",
+              "@id": "https://data.ucd.ie/api/img/ucdlib:40851/annotation/ucdlib:42220",
+              "@type": "oa:Annotation"
+            }]
+         }
+      ]
+   }],
+  "service": [
+            {
+         "@context": "http://geojson.org/geojson-context.jsonld",
+         "@id": "https://data.ucd.ie/api/geo/v1/dl/geoFilter=bbox(-6.26972437441,53.340354022578,-6.255048549004,53.346124500604)&format=geojson",
+         "label": "Bounding box coordinates",
+         "profile": "http://geojson.org/geojson-spec.html",
+         "type": "Feature",
+         "properties" : { "name": "City of Dublin", "type": "dcterms:Box" },
+         "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+                 [-6.26972437441,53.340354022578],[-6.255048549004,53.346124500604]
+             ]
+         }
+     }
+      ]
+}

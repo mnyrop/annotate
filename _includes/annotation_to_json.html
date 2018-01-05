@@ -8,7 +8,7 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
 <script type="text/jscript">
-  var gallicaUrlRegex = /.+gallica\.bnf\.fr.+canvas\/(.+)/;
+  var canvas_regex = /.+canvas\/([^.]+)/;
 
   function download(filename, text) {
     var element = document.createElement('a');
@@ -40,7 +40,7 @@
       $( "#anno_results" ).empty()
       for(var i =0; i < localStorage.length; i++){
         var key = localStorage.key(i);
-        var matches = gallicaUrlRegex.exec(key);
+        var matches = canvas_regex.exec(key);
         if(matches != null) {
           var canvas = matches[1];
           var fileName = canvas + '.json';

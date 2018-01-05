@@ -13,10 +13,11 @@
      myMiradorInstance = Mirador({
        id: 'viewer',
        data: [
-         { manifestUri: '{{ site.baseurl }}/manifest.json', 'location': 'Gallica'}
+         { manifestUri: '{{ site.url }}{{ site.baseurl }}/iiif/dublin/manifest.json', 'location': 'University of the City of Dublin'},
+				 { manifestUri: '{{ site.url }}{{ site.baseurl }}/iiif/bnf640/manifest.json', 'location': 'Gallica'}
        ],
        windowObjects: [{
-           loadedManifest: '{{ site.baseurl }}/manifest.json',
+           loadedManifest: '{{ site.url }}{{ site.baseurl }}/iiif/bnf640/manifest.json',
            canvasID: 'http://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/canvas/f7',
            bottomPanelVisible: true
        }],
