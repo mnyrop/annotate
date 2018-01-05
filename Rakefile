@@ -49,9 +49,10 @@ task :write_manifest do
   manifest["sequences"][0]["canvases"].select {|c| canvas_ids.include? c["@id"].split('/')[-1] }.each do | canvas |
     this_id = canvas["@id"].split('/')[-1]
     anno_hash = Hash.new { |hash, key| hash[key] = {} }
+    empty_array = Array.new
     anno_hash["@id"] = "{{ site.url }}{{ site.baseurl }}/annotations/" + this_id + "/list.json"
     anno_hash["@type"] = "sc:AnnotationList"
-    canvas["otherContent"] = anno_hash
+    canvas["otherContent"] = empty_array << anno_hash
   end
 
   # write new manifest to file
