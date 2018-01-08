@@ -1,0 +1,165 @@
+{
+  "@context": "http://iiif.io/api/presentation/2/context.json",
+  "@id": "https://purl.stanford.edu/wh234bz9013/iiif/manifest",
+  "@type": "sc:Manifest",
+  "label": "HÆMISPHÆRIUM STELLATVM BOREALE CVM SUBIECTO HÆMISPHÆRO TERRESTRI.",
+  "attribution": "This work has been identified as being free of known restrictions under copyright law, including all related and neighboring rights. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.",
+  "logo": {
+    "@id": "https://stacks.stanford.edu/image/iiif/wy534zh7137%2FSULAIR_rosette/full/400,/0/default.jpg",
+    "service": {
+      "@context": "http://iiif.io/api/image/2/context.json",
+      "@id": "https://stacks.stanford.edu/image/iiif/wy534zh7137%2FSULAIR_rosette",
+      "profile": "http://iiif.io/api/image/2/level2.json"
+    }
+  },
+  "seeAlso": {
+    "@id": "https://purl.stanford.edu/wh234bz9013.mods",
+    "format": "application/mods+xml"
+  },
+  "metadata": [
+    {
+      "label": "Available Online",
+      "value": "<a href='https://purl.stanford.edu/wh234bz9013'>https://purl.stanford.edu/wh234bz9013</a>"
+    },
+    {
+      "label": "Identifier",
+      "value": "C1.page2"
+    },
+    {
+      "label": "Title",
+      "value": "HÆMISPHÆRIUM STELLATVM BOREALE CVM SUBIECTO HÆMISPHÆRO TERRESTRI."
+    },
+    {
+      "label": "Date",
+      "value": "1660"
+    },
+    {
+      "label": "Date",
+      "value": "1660"
+    },
+    {
+      "label": "Creator",
+      "value": "Cellarius, Andreas"
+    },
+    {
+      "label": "Type",
+      "value": "Digital Maps"
+    },
+    {
+      "label": "Type",
+      "value": "Early Maps"
+    },
+    {
+      "label": "Type",
+      "value": "map"
+    },
+    {
+      "label": "Format",
+      "value": "1 celestial chart : hand col. ; 43.5 x 51.5 cm."
+    },
+    {
+      "label": "Rights",
+      "value": "Stanford University Libraries and Academic Information Resources - Terms of Use SULAIR Web sites are subject to Stanford University's standard Terms of Use (See http://www.stanford.edu/home/atoz/terms.html) These terms include a limited personal, non-exclusive, non-transferable license to access and use the sites, and to download - where permitted - material for personal, non-commercial, non-display use only. Please contact the University Librarian to request permission to use SULAIR Web sites and contents beyond the scope of the above license, including but not limited to republication to a group or republishing the Web site or parts of the Web site. SULAIR provides access to a variety of external databases and resources, which sites are governed by their own Terms of Use, as well as contractual access restrictions. The Terms of Use on these external sites always govern the data available there. Please consult with library staff if you have questions about data access and availability."
+    },
+    {
+      "label": "Coverage",
+      "value": "(W 21° --E 159°/N 90° --S 90°)"
+    },
+    {
+      "label": "Description",
+      "value": "Includes bibliographical references (p. xv-xvi) and indexes."
+    },
+    {
+      "label": "Description",
+      "value": "Copperplate engraved."
+    },
+    {
+      "label": "Description",
+      "value": "Shows the northern celestial hemisphere from the equatorial pole at an angle to both the ecliptic and the equator. The earth is also inscribed, depicting view as if looking at earth through the celestial realm. Astronomers and their pupils in study and discussion look at the hemisphere."
+    },
+    {
+      "label": "Description",
+      "value": "This with accompanying chart of southern celestial hemisphere show Ptolemaic constellations, in addition to the non-Ptolemaic constellations of: Tycho Brahe (Coma Berenices and Antinous) and Petrus Plancius (Columbia Noachi, Camelopardalis, Monoceros, the rivers Jordanus and Tigris and others, and Keyzer (Indus, Pavo, and Piscis Volans)."
+    },
+    {
+      "label": "Description",
+      "value": "Title divided between 2 cartouches of banners hanging from winged horn players (or putti) (top left and right)."
+    },
+    {
+      "label": "Description",
+      "value": "'26' (bottom right)."
+    },
+    {
+      "label": "Description",
+      "value": "Issued in: Atlas coelestis; seu harmonia macrocosmica (Celestial atlas of universal harmony).-- Amstelodami : apud Joannem Janssonium, 1660, 1661. Published by Gerardum Valk & Petrum Schenk, 1708."
+    },
+    {
+      "label": "Description",
+      "value": "L.C. 469, 4274; Koeman IV,Cel 1(26), Cel 2, Cel3; Snyder p. 115-116 (PLATE 63)."
+    },
+    {
+      "label": "Description",
+      "value": "[Andreas Cellarius]."
+    },
+    {
+      "label": "Description",
+      "value": "Glen McLaughlin with Nancy H. Mayo."
+    },
+    {
+      "label": "Relation",
+      "value": "The Glen McLaughlin Map Collection of California as an Island"
+    },
+    {
+      "label": "PublishDate",
+      "value": "2017-06-20T23:45:11Z"
+    }
+  ],
+  "description": "Includes bibliographical references (p. xv-xvi) and indexes.",
+  "thumbnail": {
+    "@id": "https://stacks.stanford.edu/image/iiif/wh234bz9013%2Fwh234bz9013_05_0001/full/!400,400/0/default.jpg",
+    "@type": "dctypes:Image",
+    "format": "image/jpeg",
+    "service": {
+      "@context": "http://iiif.io/api/image/2/context.json",
+      "@id": "https://stacks.stanford.edu/image/iiif/wh234bz9013%2Fwh234bz9013_05_0001",
+      "profile": "http://iiif.io/api/image/2/level2.json"
+    }
+  },
+  "sequences": [
+    {
+      "@id": "https://purl.stanford.edu/wh234bz9013#sequence-1",
+      "@type": "sc:Sequence",
+      "label": "Current order",
+      "viewingDirection": "left-to-right",
+      "canvases": [
+        {
+          "@id": "https://purl.stanford.edu/wh234bz9013/iiif/canvas/0001",
+          "@type": "sc:Canvas",
+          "label": "image",
+          "height": 7647,
+          "width": 8812,
+          "images": [
+            {
+              "@id": "https://purl.stanford.edu/wh234bz9013/iiif/annotation/0001",
+              "@type": "oa:Annotation",
+              "motivation": "sc:painting",
+              "resource": {
+                "@id": "https://stacks.stanford.edu/image/iiif/wh234bz9013%2Fwh234bz9013_05_0001/full/full/0/default.jpg",
+                "@type": "dctypes:Image",
+                "format": "image/jpeg",
+                "height": 7647,
+                "width": 8812,
+                "service": {
+                  "@context": "http://iiif.io/api/image/2/context.json",
+                  "@id": "https://stacks.stanford.edu/image/iiif/wh234bz9013%2Fwh234bz9013_05_0001",
+                  "profile": "http://iiif.io/api/image/2/level2.json"
+                }
+              },
+              "on": "https://purl.stanford.edu/wh234bz9013/iiif/canvas/0001"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

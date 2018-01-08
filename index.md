@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Adding Annotations
+manifests: [ bnf640, haemisphaerium ]
 ---
 <script src="https://use.fontawesome.com/884e80fbb8.js"></script>
 
@@ -16,7 +17,7 @@ title: Adding Annotations
 
 ### Make sure you are on Image View <i class="fa fa-photo"></i> then toggle the Annotation <i class="fa fa-comments"></i> panel.
 
-### Add one or more annotations to one or more pages. Then click the 'view cached annotation JSON' button below. 
+### Add one or more annotations to one or more pages. Then click the 'view cached annotation JSON' button below.
 
 ### **Note:** This will only include *new* annotations added in the browser.
 

@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.4
+script:
+  - bundle exec jekyll build -d _site/bnf640
+  - bundle exec htmlproofer ./_site --only-4xx --check-html --assume-extension  --disable-external '/.*/'
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
