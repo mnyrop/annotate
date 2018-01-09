@@ -1,13 +1,16 @@
-title: BnF640
+title: IIIF Annotation Demo
 description: ""
-baseurl: "/bnf640" # the subpath of your site, e.g. /blog
+baseurl: "/annotate" # the subpath of your site, e.g. /blog
 url: "http://marii.info" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
 permalink: pretty
 
-theme: minima
+github_username: mnyrop
+social_username: mariinyrop
+
+theme: jekyll-swiss
 
 exclude: [Rakefile, Gemfile*]
 
