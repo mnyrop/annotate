@@ -12,7 +12,7 @@ social_username: mariinyrop
 
 theme: jekyll-swiss
 
-exclude: [Rakefile, Gemfile*]
+exclude: [Rakefile, Gemfile*, Vendor]
 
 webrick:
   headers:
