@@ -36,6 +36,8 @@ Add one or more annotations to one or more pages. Then click the 'view cached an
 <div class="col-4 sm-width-full border-top-thin"></div>
 <br>
 
+<iframe width="100%" height="500" src="https://www.youtube-nocookie.com/embed/nHbsm8T1BnI?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br><br>
+
 __1.__ Make sure you a running a modern version of Ruby (v2 or later) and have **[Jekyll](https://jekyllrb.com/)** installed.
 
 __2.__ Clone the **[demo site repository](https://github.com/mnyrop/bnf640)** onto your local machine and open it in a text editor like **[Atom](https://atom.io/)**.
