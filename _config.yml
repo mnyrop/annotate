@@ -1,9 +1,8 @@
 title: IIIF Annotation Demo
 description: ""
-baseurl: "/annotate" # the subpath of your site, e.g. /blog
-url: "http://marii.info" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/annotate"
+url: "http://marii.info"
 
-# Build settings
 markdown: kramdown
 permalink: pretty
 
@@ -13,6 +12,7 @@ social_username: mariinyrop
 theme: jekyll-swiss
 
 exclude: [Rakefile, Gemfile*, vendor]
+include: [feed.xml]
 
 webrick:
   headers:
