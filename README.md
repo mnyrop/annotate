@@ -7,7 +7,7 @@ Create/store/load static annotations on IIIF manifests via Jekyll
 ### Requirements
 - Ruby v2.2 or higher
 - Jekyll v3.5 or higher
-- Bundler 1.12 or higher
+- Bundler v1.12 or higher
 
 ### Installing
 - Clone this repository and navigate into it:<br>
