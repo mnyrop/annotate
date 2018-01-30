@@ -60,10 +60,3 @@ __9.__ Run `$ bundle exec rake`. This will store your annotations in subfolders 
 __10.__ Serve the site again with `$ bundle exec jekyll serve`. Your annotations will be back and permanent!
 
 __11.__ Want to add more annotations? Follow the same process and drag new files into the `annotations` folder. This will not overwrite any existing annotation data.
-
-
-<br>
-<div class="col-4 sm-width-full border-top-thin"></div>
-<br>
-
-___\*Caveat:__ While you can always add more annotations, there is currently not any easy way to delete or edit individual annotations that have already been downloaded and stored in the static site._

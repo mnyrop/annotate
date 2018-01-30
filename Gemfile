@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'jekyll', '3.7.0'
+gem 'jekyll', '3.7.2'
 gem 'jekyll-swiss'
 gem 'rake'
 gem 'html-proofer'
