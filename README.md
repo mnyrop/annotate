@@ -2,8 +2,6 @@
 
 Create/store/load static annotations on IIIF manifests via Jekyll
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nHbsm8T1BnI" frameborder="0"></iframe>
-
 ## Getting started
 
 ### Requirements
