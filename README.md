@@ -1,13 +1,14 @@
-# IIIF-Annotate [![Build Status](https://travis-ci.org/mnyrop/annotate.svg?branch=master)](https://travis-ci.org/mnyrop/annotate) [![Dependency Status](https://gemnasium.com/badges/github.com/mnyrop/annotate.svg)](https://gemnasium.com/github.com/mnyrop/annotate)
+# IIIF-Annotate [![Build Status](https://travis-ci.org/mnyrop/annotate.svg?branch=master)](https://travis-ci.org/mnyrop/annotate)
+
 
 Create/store/load static annotations on IIIF manifests via Jekyll
 
 ## Getting started
 
 ### Requirements
-- Ruby v2.2 or higher
-- Jekyll v3.5 or higher
-- Bundler v1.12 or higher
+- Ruby >=2.2
+- Jekyll >=3.5
+- Bundler >=1.12
 
 ### Installing
 - Clone this repository and navigate into it:<br>
