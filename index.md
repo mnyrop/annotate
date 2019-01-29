@@ -1,9 +1,8 @@
 ---
 layout: page
 title: '1. Select a Manifest'
-manifests: [ bnf640, haemisphaerium ]
-loaded_manifest: bnf640
-canvas_id: http://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/canvas/f7
+manifests: [ copperfield, bnf640, haemisphaerium ]
+loaded_manifest: copperfield
 ---
 <script src="https://use.fontawesome.com/884e80fbb8.js"></script>
 <div id="1" style="position:absolute;top:0px;"></div>
@@ -12,7 +11,7 @@ Sample pre-loaded annotations can be viewed by toggling the <i class="fa fa-comm
 
 {% include iiif_presentation.html %}
 
-Switch between Stanford's *HÆMISPHÆRIUM STELLATVM BOREALE CVM SUBIECTO HÆMISPHÆRO TERRESTRI* and *Folio 640* from the Bibliothèque nationale de France Français by clicking <i class="fa fa-th-large"></i> in the top left corner, followed by Replace Object <i class="fa fa-refresh"></i>.
+Switch between objects by clicking <i class="fa fa-th-large"></i> in the top left corner, followed by Replace Object <i class="fa fa-refresh"></i>.
 
 <div id="2"></div>
 <h1 class="h0">2. Add Annotations</h1>
